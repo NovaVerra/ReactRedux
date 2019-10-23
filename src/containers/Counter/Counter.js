@@ -39,7 +39,7 @@ const mapDispatchToProps = (dispatch) => {
 		onDecrementCounter: () => dispatch({type: actionTypes.DECREMENT}),
 		onAddCounter: () => dispatch({type: actionTypes.ADD, value: 5}),
 		onSubtracttCounter: () => dispatch({type: actionTypes.SUBTRACT, value: 5}),
-		onStoreResult: (result) => dispatch({type: actionTypes.STORE_RESULT, result: result}),
+		onStoreResult: (val) => dispatch({type: actionTypes.STORE_RESULT, val: val}),
 		onDeleteResult: (id) => dispatch({type: actionTypes.DELETE_RESULT, resultElId: id})
 	}
 }
